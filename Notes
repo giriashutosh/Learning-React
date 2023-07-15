@@ -1,0 +1,34 @@
+There are two types of dependencies
+1. Dev dependencies(generally required for development)// parcel example.
+2. Normal dependencies(It can also be used in production).
+
+Parcel is the bundler for the application. It is responsible for making application to production ready.
+cmd: npm install -D parcel.
+parcel hosted the app on server and give localhost.
+Also build Dev build.
+HMR = Hot Module Replacement.
+Parcel uses the File Watching Algorithm - written in c++;
+Caching - faster build.
+Image optimization
+Bundler
+Minification
+Compress.
+Consistent Hashing
+code splitting
+Differential Bundling - support older browesers
+Diagnostics
+Error handling
+Https
+Tree Shaking - remove unused files.
+
+npx use for execute the package.
+
+Note: React internally use webpack.
+
+package.json is the configuration for the npm. It keeps track of the version of the package. caret can update the version if there is minor updates and tilda use for major updates.
+package-lock.json keeps track of the exact version of the package.
+
+Transitive dependencies means like I have installed the parcel but we have seen so many folders inside the node-modules folder. So, because parcel as a project has its own dependencies. those dependencies has their own dependencies.
+
+CDN way to import react in the project is not the good way beacuse it will do network call and there is static version of react in the project.
+So, npm install react used because it is easier to maintain the dependencies.
